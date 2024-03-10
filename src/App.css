@@ -1,7 +1,12 @@
 /* App.css */
 
+body {
+    background-color: #f0f0f0; /* Set the background color for the entire page */
+}
+
 .App {
     text-align: center;
+    padding-bottom: 100px; /* Add padding to the bottom of the page */
 }
 
 .App-header {
@@ -13,7 +18,6 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-    padding-bottom: 200px; /* Add padding to the bottom of the header */
 }
 
 .header-box {
@@ -35,28 +39,34 @@
     margin-bottom: 20px;
 }
 
-.race-data {
-    border: 2px solid #fff;
-    padding: 10px;
-    margin-bottom: 20px;
+.data-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.data {
+    margin: 10px;
+    text-align: left;
 }
 
 .car-group {
     display: flex;
-    justify-content: space-between; /* Ensure cars are evenly spaced */
-    margin-bottom: 500px; /* Add margin between the car groups */
+    justify-content: space-around;
 }
 
 .car-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .car-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid #ccc; /* Add border around the car image */
+    padding: 10px; /* Add padding to the car image container */
 }
 
 .car-image {
@@ -72,31 +82,23 @@
     border-radius: 10px;
     text-align: center;
     margin-top: auto;
-}
-
-.emergency-data {
-    margin-top: 10px;
-}
-
-.data-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.data {
-    margin: 10px;
-    text-align: left;
+    margin-bottom: 20px; /* Add margin to the bottom of the emergency box */
 }
 
 .footer {
     background-color: #282c34;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     width: 100%;
+    text-align: center;
     position: fixed;
     bottom: 0;
-    text-align: center;
-    z-index: 10; /* Ensure footer appears above other content */
-    max-height: 25%; /* Set max height to 25% of viewport height */
 }
+
+    .footer .copyright {
+        margin-bottom: 10px;
+    }
+
+    .footer .powered-by {
+        font-size: 14px;
+    }
