@@ -1,38 +1,102 @@
+/* App.css */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding-bottom: 200px; /* Add padding to the bottom of the header */
 }
 
-.App-link {
-  color: #61dafb;
+.header-box {
+    border: 2px solid #00B0CB; /* Mercedes AMG turquoise color */
+    padding: 10px;
+    display: inline-block; /* Ensure inline elements behave like blocks */
+    background-color: #00B0CB; /* Fill in the box with the color */
+    width: 100%; /* Take up entire width */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+    width: 250px;
+    margin-right: 10px;
+}
+
+.main-data {
+    border: 2px solid #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.race-data {
+    border: 2px solid #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.car-group {
+    display: flex;
+    justify-content: space-between; /* Ensure cars are evenly spaced */
+    margin-bottom: 500px; /* Add margin between the car groups */
+}
+
+.car-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.emergency-box {
+    background-color: #ff0000;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.emergency-data {
+    margin-top: 10px;
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.data {
+    margin: 10px;
+    text-align: left;
+}
+
+.footer {
+    background-color: #282c34;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    z-index: 10; /* Ensure footer appears above other content */
+    max-height: 25%; /* Set max height to 25% of viewport height */
 }
